@@ -1,0 +1,59 @@
+
+.container {
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    
+    .navItem {
+        color: #333333;
+        font-weight: 500;
+        background: transparent;
+        border: 0;
+
+       &:hover {
+            color: #3294d4;
+        }
+    }
+}
+
+.btn {
+    background-color: transparent;
+    border: 0;
+    display: none;
+}
+
+.toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.toggleHide{
+    display: none;
+}
+
+@media screen and (max-width: 440px) {
+    .nav{
+        display: none;
+    }
+    .btn{
+        display: block;
+    }
+    .toggleHide{
+        display: block;
+    }
+    .h1 {
+        font-size: 23px;
+    }
+
+}
